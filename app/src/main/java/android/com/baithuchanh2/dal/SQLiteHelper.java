@@ -35,11 +35,11 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
     }
 
-    // lấy tất cả item sắp xếp theo thời gian giảm dần.
+//     lấy tất cả item sắp xếp theo thời gian giảm dần.
     public List<Item> getAll(){
         List<Item> list = new ArrayList<>();
         SQLiteDatabase st = getReadableDatabase();
-//        String order = "id DESC";
+        String order = "id DESC";
         Cursor rs = st.query("items",null,
                 null, null, null, null, null);
 
