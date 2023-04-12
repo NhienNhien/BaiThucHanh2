@@ -39,9 +39,9 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     public List<Item> getAll(){
         List<Item> list = new ArrayList<>();
         SQLiteDatabase st = getReadableDatabase();
-        String order = "id DESC";
+//        String order = "id DESC";
         Cursor rs = st.query("items",null,
-                null, null, null, null, order);
+                null, null, null, null, null);
 
         while (rs != null  && rs.moveToNext()){
             list.add(new Item(rs.getInt(0),

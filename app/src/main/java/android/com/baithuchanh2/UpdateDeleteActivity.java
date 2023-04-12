@@ -141,7 +141,6 @@ public class UpdateDeleteActivity extends AppCompatActivity implements View.OnCl
         }
 
         if(v == btnDelete) {
-            Toast.makeText(this, "aa", Toast.LENGTH_SHORT).show();
             AlertDialog.Builder builder = new android.app.AlertDialog.Builder(UpdateDeleteActivity.this);
             builder.setTitle("Thông báo xóa");
             builder.setMessage("Bạn chắc muốn xóa công việc" +item.getTen() +" không?");
