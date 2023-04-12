@@ -1,4 +1,4 @@
-package android.com.congviec;
+package android.com.baithuchanh2;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("android.com.congviec", appContext.getPackageName());
+        assertEquals("android.com.baithuchanh2", appContext.getPackageName());
     }
 }

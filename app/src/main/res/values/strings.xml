@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">CongViec</string>
+    <string name="app_name">Công việc</string>
+    <string-array name="tinhTrang">
+        <item>Chưa thực hiện</item>
+        <item>Đang thực hiện</item>
+        <item>Hoàn thành</item>
+    </string-array>
+    <string-array name="congTac">
+        <item>Một mình</item>
+        <item>Làm chung</item>
+    </string-array>
 </resources>
