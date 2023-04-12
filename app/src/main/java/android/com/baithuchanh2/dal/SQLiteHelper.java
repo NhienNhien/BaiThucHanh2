@@ -41,7 +41,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         SQLiteDatabase st = getReadableDatabase();
         String order = "id DESC";
         Cursor rs = st.query("items",null,
-                null, null, null, null, null);
+                null, null, null, null, order);
 
         while (rs != null  && rs.moveToNext()){
             list.add(new Item(rs.getInt(0),
@@ -87,7 +87,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
     public List<Item> searchByNoiDung(String key){
         List<Item> list = new ArrayList<>();
-        String whereClause = "title like ?";
+        String whereClause = "noiDung like ?";
         String order = "thoiHan ASC";
         String[]whenArgs = {"%"+key+"%"};
         SQLiteDatabase st = getReadableDatabase();
